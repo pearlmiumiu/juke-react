@@ -8,7 +8,7 @@ import Sidebar from "./Sidebar"
 import Player from "./Player"
 import NewPlaylist from "./NewPlaylist"
 import axios from "axios"
-import SinglePlaylist from "./SinglePlaylist"
+import Playlist from "./Playlist"
 
 export default class Main extends Component {  //Main is the first componet, name should be upper case as "Main"
 	constructor(props) {
@@ -53,7 +53,7 @@ export default class Main extends Component {  //Main is the first componet, nam
 							<Route path="/albums/:albumId" component={SingleAlbum} />
 							<Route exact path="/artists" component={AllArtists} />
 							<Route path="/artists/:artistId" component={SingleArtist} />
-							<Route path="/playlists/:playlistId" component={SinglePlaylist}/>
+							<Route path="/playlists/:playlistId" component={Playlist}/>
 							<Route
 								exact
 								path="/NewPlaylist"

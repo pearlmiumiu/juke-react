@@ -19,6 +19,7 @@ class NewPlaylist extends Component {
 
 	handleSubmit(event) {  //inputValue==new playlist name
 		event.preventDefault() //prevent default HTML from happening, single page application. no need to refresh, just stay where we are
+		//addplaylist function on the main, pass in as prop
 		this.props.addPlaylist(this.state.inputValue) //send a name to the addplaylist as an argument, which perform a post req to add a new playlist
 		this.setState({
 			//everytime input value change, jsx knows, but html doesnt
